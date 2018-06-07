@@ -1,0 +1,11 @@
+<section class="periodic">
+
+    <h3>Interactive Periodic Table</h3>
+  
+    <div class="borders periodic-cell" ng-repeat="element in periodicTable" ng-style="element.style">
+      <div ng-show="element.symbol != ''" class="inside-cell" ng-style="element.styleb" >
+        <input type="text" ng-model="element.answer" placeholder="?">
+      </div>
+    </div>
+  
+</section>
